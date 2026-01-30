@@ -8,5 +8,6 @@ git remote add origin https://github.com/Nonashi37/OOP-63-2.git
 
 Основные команды
 git status | состояние проекта
-git add.  | скопировать все в буфер обмена
-
+git add .  | скопировать все в буфер обмена
+git commit -m "lesson1" |
+git branch
