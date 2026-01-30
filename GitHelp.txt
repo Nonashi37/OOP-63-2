@@ -1,0 +1,12 @@
+Каманды для регистрации ващиз данных
+git config --global user.name "Your name"
+git config --global user.email "your email"
+
+Команды только для онного проекта
+git init
+git remote add origin https://github.com/Nonashi37/OOP-63-2.git
+
+Основные команды
+git status | состояние проекта
+git add.  | скопировать все в буфер обмена
+
