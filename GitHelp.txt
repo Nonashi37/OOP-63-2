@@ -10,4 +10,5 @@ git remote add origin https://github.com/Nonashi37/OOP-63-2.git
 git status | состояние проекта
 git add .  | скопировать все в буфер обмена
 git commit -m "lesson1" |
-git branch
+git branch (name of your branch)| Создает новую ветку
+git switch/git checkout (name) переходит на указанную ветку
