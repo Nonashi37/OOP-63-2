@@ -1,55 +1,55 @@
-# class UserAccaunt:
-#     def __init__(self, username, balance, pin):
-#         self.username = username
-#         self._balance = balance
-#         self.__pin = pin
-#
-#     # \getter для зашашенного атрибута balance
-#     @property
-#     def balance(self):
-#         return f" На счету у {self.username}: {self._balance} SOM "
-#
-#     # Метод для проверки доступа к PIN
-#     def check_pin(self, input_pin):
-#         # Проверяет совпадает ли введенный PIN с введенным
-#         return self.__pin == input_pin # IF input PIN == self.__pin return
-#
-#     # Метод для изменения приватного атрибута
-#     def reset_pin(self, old_pin, new_pin):
-#         """"Сменить Пин код при условии если известен старый"""
-#         if self.check_pin(old_pin):
-#             self.__pin = new_pin
-#             print(" Success PIN Успешно изменен ")
-#         else:
-#             print(" Error 303 old PIN is incorrect ")
-#
-# # Демонстрация что работает
-#
-# user = UserAccaunt("Dmitry_Koshyenko", 1585999, "5467")
-#
-# print(f"User: {user.username}")
-# print(user.balance)
-#
-# # Пробуем достучатся приватного доступа на прямую
-# print("\n--- Попытка взлома ---")
-# try:
-#     print(user.__pin)
-# except AttributeError:
-#     print(" Error: Python не дает обратится к __pin напрямую Инкапсуляция в деле")
-#
-#
-# # работаем через Официал методы
-# print("\n--- Проверка Доступа ---")
-# is_valid = user.check_pin("1234")
-# print(f"Введен PIN 1234. Верно? {is_valid}")
-#
-# is_valid = user.check_pin("5467")
-# print(f"Введен PIN 5467. Верно? {is_valid}")
-#
-# # Смена пароля
-# print("\n--- Changing the PIN ---")
-# user.reset_pin("000", "1111") # won't work
-# user.reset_pin("5467", "7788") # will work
+class UserAccaunt:
+    def __init__(self, username, balance, pin):
+        self.username = username
+        self._balance = balance
+        self.__pin = pin
+
+    # \getter для зашашенного атрибута balance
+    @property
+    def balance(self):
+        return f" На счету у {self.username}: {self._balance} SOM "
+
+    # Метод для проверки доступа к PIN
+    def check_pin(self, input_pin):
+        # Проверяет совпадает ли введенный PIN с введенным
+        return self.__pin == input_pin # IF input PIN == self.__pin return
+
+    # Метод для изменения приватного атрибута
+    def reset_pin(self, old_pin, new_pin):
+        """"Сменить Пин код при условии если известен старый"""
+        if self.check_pin(old_pin):
+            self.__pin = new_pin
+            print(" Success PIN Успешно изменен ")
+        else:
+            print(" Error 303 old PIN is incorrect ")
+
+# Демонстрация что работает
+
+user = UserAccaunt("Dmitry_Koshyenko", 1585999, "5467")
+
+print(f"User: {user.username}")
+print(user.balance)
+
+# Пробуем достучатся приватного доступа на прямую
+print("\n--- Попытка взлома ---")
+try:
+    print(user.__pin)
+except AttributeError:
+    print(" Error: Python не дает обратится к __pin напрямую Инкапсуляция в деле")
+
+
+# работаем через Официал методы
+print("\n--- Проверка Доступа ---")
+is_valid = user.check_pin("1234")
+print(f"Введен PIN 1234. Верно? {is_valid}")
+
+is_valid = user.check_pin("5467")
+print(f"Введен PIN 5467. Верно? {is_valid}")
+
+# Смена пароля
+print("\n--- Changing the PIN ---")
+user.reset_pin("000", "1111") # won't work
+user.reset_pin("5467", "7788") # will work
 
 
 
