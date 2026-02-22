@@ -13,3 +13,9 @@ git commit -m "lesson1" |
 git branch
 
 git switch -c (name) | Создает и сразу переключается на ветку
+
+
+python3 -m venv venv_name | Создание venv
+
+name_venv\Scripts\activate | активация venv для W1ndows
+source name_venv\Scripts\activate
