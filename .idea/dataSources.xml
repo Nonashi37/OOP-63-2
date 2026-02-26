@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="users.db" uuid="8b94b4c7-a2f1-48e5-b583-a063c4d89e9e">
+    <data-source source="LOCAL" name="prod_killer.db" uuid="8b94b4c7-a2f1-48e5-b583-a063c4d89e9e">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/lessons/users.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\Bekzhan\PycharmProjects\OOP63-2\hw\hw_lesson8.py</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
     <data-source source="LOCAL" name="grades.db" uuid="95d4ebef-1df2-48cd-a5d4-038f0c20443b">
